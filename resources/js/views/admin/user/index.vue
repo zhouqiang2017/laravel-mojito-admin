@@ -42,6 +42,7 @@
           <el-button
                   v-if="updatePermission"
                   size="mini"
+                  :disabled="scope.row.name==='admin'"
                   @click="handleEdit(scope.$index, scope.row)">{{ $t('edit') }}</el-button>
           <el-button
                   v-if="assignRolePermission"
@@ -51,6 +52,7 @@
                   v-if="deletePermission"
                   size="mini"
                   type="danger"
+                  :disabled="scope.row.name==='admin'"
                   @click="handleDelete(scope.$index, scope.row)">{{ $t('delete') }}</el-button>
         </template>
       </el-table-column>

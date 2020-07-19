@@ -214,6 +214,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
 
 
 
@@ -640,7 +642,10 @@ var render = function() {
                       ? _c(
                           "el-button",
                           {
-                            attrs: { size: "mini" },
+                            attrs: {
+                              size: "mini",
+                              disabled: scope.row.name === "admin"
+                            },
                             on: {
                               click: function($event) {
                                 return _vm.handleEdit(scope.$index, scope.row)
@@ -670,7 +675,11 @@ var render = function() {
                       ? _c(
                           "el-button",
                           {
-                            attrs: { size: "mini", type: "danger" },
+                            attrs: {
+                              size: "mini",
+                              type: "danger",
+                              disabled: scope.row.name === "admin"
+                            },
                             on: {
                               click: function($event) {
                                 return _vm.handleDelete(scope.$index, scope.row)
