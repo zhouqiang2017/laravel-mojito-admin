@@ -24,7 +24,7 @@
             </el-row>
         </el-card>
         <el-col style="text-align: center">
-            <el-button type="primary" @click="assignPermission">{{ $t('confirm') }}</el-button>
+            <el-button type="primary" @click="assignPermission" :loading="submitLoading">{{ $t('confirm') }}</el-button>
         </el-col>
     </div>
 </template>
@@ -41,14 +41,17 @@
                 rolePermissions: [],
                 guardNameByPermissions: [],
                 groupPermissions: {},
-                radio: {}
+                radio: {},
+                submitLoading:false
             }
         },
 
         methods: {
             assignPermission() {
+                this.submitLoading = true
                 roleAssignPermission(this.$route.params.id, this.rolePermissions).then(response => {
                     notify.editSuccess(this)
+                    this.submitLoading = false
                 })
             },
             change(groupId) {

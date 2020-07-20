@@ -52,15 +52,18 @@ __webpack_require__.r(__webpack_exports__);
       rolePermissions: [],
       guardNameByPermissions: [],
       groupPermissions: {},
-      radio: {}
+      radio: {},
+      submitLoading: false
     };
   },
   methods: {
     assignPermission: function assignPermission() {
       var _this = this;
 
+      this.submitLoading = true;
       Object(_api_role__WEBPACK_IMPORTED_MODULE_1__["roleAssignPermission"])(this.$route.params.id, this.rolePermissions).then(function (response) {
         _libs_notify__WEBPACK_IMPORTED_MODULE_2__["default"].editSuccess(_this);
+        _this.submitLoading = false;
       });
     },
     change: function change(groupId) {
@@ -306,7 +309,10 @@ var render = function() {
         [
           _c(
             "el-button",
-            { attrs: { type: "primary" }, on: { click: _vm.assignPermission } },
+            {
+              attrs: { type: "primary", loading: _vm.submitLoading },
+              on: { click: _vm.assignPermission }
+            },
             [_vm._v(_vm._s(_vm.$t("confirm")))]
           )
         ],
