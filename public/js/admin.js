@@ -89827,7 +89827,8 @@ __webpack_require__.r(__webpack_exports__);
       permissionGroup: '权限组',
       menu: '菜单',
       roleAssignPermission: '角色分配权限',
-      banner: '横幅'
+      banner: '横幅',
+      senior: '中考体育'
     }
   },
   closeButton: {
@@ -90290,6 +90291,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_admin_dashboard_routes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/admin/dashboard/routes */ "./resources/js/views/admin/dashboard/routes.js");
 /* harmony import */ var _views_admin_login_routes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/admin/login/routes */ "./resources/js/views/admin/login/routes.js");
 /* harmony import */ var _views_admin_banner_routes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../views/admin/banner/routes */ "./resources/js/views/admin/banner/routes.js");
+/* harmony import */ var _views_admin_senior_routes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../views/admin/senior/routes */ "./resources/js/views/admin/senior/routes.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -90311,6 +90313,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ([{
   name: 'adminMain',
   path: '/admin',
@@ -90320,7 +90323,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     title: 'home'
   },
   component: _views_admin_main_index__WEBPACK_IMPORTED_MODULE_0__["default"],
-  children: [].concat(_toConsumableArray(_views_admin_dashboard_routes__WEBPACK_IMPORTED_MODULE_6__["default"]), _toConsumableArray(_views_admin_user_routes__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_views_admin_role_routes__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_views_admin_permission_routes__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_views_admin_permission_group_routes__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_views_admin_menu_routes__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_views_admin_banner_routes__WEBPACK_IMPORTED_MODULE_8__["default"]))
+  children: [].concat(_toConsumableArray(_views_admin_dashboard_routes__WEBPACK_IMPORTED_MODULE_6__["default"]), _toConsumableArray(_views_admin_user_routes__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_views_admin_role_routes__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_views_admin_permission_routes__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_views_admin_permission_group_routes__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_views_admin_menu_routes__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_views_admin_banner_routes__WEBPACK_IMPORTED_MODULE_8__["default"]), _toConsumableArray(_views_admin_senior_routes__WEBPACK_IMPORTED_MODULE_9__["default"]))
 }].concat(_toConsumableArray(_views_admin_login_routes__WEBPACK_IMPORTED_MODULE_7__["default"])));
 
 /***/ }),
@@ -90956,6 +90959,31 @@ __webpack_require__.r(__webpack_exports__);
       return void __webpack_require__.e(/*! AMD require */ 4).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/role/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
     }
   }]
+}]);
+
+/***/ }),
+
+/***/ "./resources/js/views/admin/senior/routes.js":
+/*!***************************************************!*\
+  !*** ./resources/js/views/admin/senior/routes.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  name: 'adminSenior',
+  path: 'senior',
+  meta: {
+    provider: 'admin',
+    title: 'senior',
+    cache: true,
+    permission: 'senior.index'
+  },
+  component: function component(resolve) {
+    return void __webpack_require__.e(/*! AMD require */ 9).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/senior/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+  }
 }]);
 
 /***/ }),

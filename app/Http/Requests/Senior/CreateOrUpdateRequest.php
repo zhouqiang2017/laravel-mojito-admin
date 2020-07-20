@@ -36,7 +36,7 @@ class CreateOrUpdateRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => '请填写标题',
+            'name.required' => '请填写项目名',
             'intro.required' => '请填写简介',
             'cover.required' => '请上传图片',
             'regular.required' => '请填写规则与方法'

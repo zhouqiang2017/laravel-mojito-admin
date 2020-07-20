@@ -7,6 +7,7 @@ import menu from '../views/admin/menu/routes'
 import adminDashboard from '../views/admin/dashboard/routes'
 import adminLogin from '../views/admin/login/routes'
 import Banner from '../views/admin/banner/routes'
+import Senior from '../views/admin/senior/routes'
 
 export default [
     {
@@ -20,7 +21,7 @@ export default [
         component: Admin,
         children: [
             ...adminDashboard, ...adminUser, ...role, ...permission,
-            ...permissionGroup, ...menu, ...Banner
+            ...permissionGroup, ...menu, ...Banner, ...Senior
         ]
     },
     ...adminLogin,

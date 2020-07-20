@@ -9,7 +9,8 @@ export default {
             permissionGroup: '权限组',
             menu: '菜单',
             roleAssignPermission: '角色分配权限',
-            banner: '横幅'
+            banner: '横幅',
+            senior: '中考体育'
 
         }
     },
