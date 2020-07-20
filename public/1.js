@@ -380,6 +380,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1024,6 +1031,25 @@ var render = function() {
         ],
         1
       ),
+      _vm._v(" "),
+      _c("el-pagination", {
+        staticClass: "mo-page",
+        attrs: {
+          "current-page": _vm.pagination.currentPage,
+          "page-size": _vm.pagination.pageSize,
+          layout: "total, prev, pager, next, jumper",
+          total: _vm.pagination.total
+        },
+        on: {
+          "current-change": _vm.requestData,
+          "update:currentPage": function($event) {
+            return _vm.$set(_vm.pagination, "currentPage", $event)
+          },
+          "update:current-page": function($event) {
+            return _vm.$set(_vm.pagination, "currentPage", $event)
+          }
+        }
+      }),
       _vm._v(" "),
       _vm.addOrUpdateVisible
         ? _c("add-or-update", {

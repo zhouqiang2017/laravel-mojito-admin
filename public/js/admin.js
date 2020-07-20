@@ -89828,7 +89828,8 @@ __webpack_require__.r(__webpack_exports__);
       menu: '菜单',
       roleAssignPermission: '角色分配权限',
       banner: '横幅',
-      senior: '中考体育'
+      senior: '中考体育',
+      member: '用户管理'
     }
   },
   closeButton: {
@@ -90292,6 +90293,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_admin_login_routes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/admin/login/routes */ "./resources/js/views/admin/login/routes.js");
 /* harmony import */ var _views_admin_banner_routes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../views/admin/banner/routes */ "./resources/js/views/admin/banner/routes.js");
 /* harmony import */ var _views_admin_senior_routes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../views/admin/senior/routes */ "./resources/js/views/admin/senior/routes.js");
+/* harmony import */ var _views_admin_member_routes__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../views/admin/member/routes */ "./resources/js/views/admin/member/routes.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -90314,6 +90316,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ([{
   name: 'adminMain',
   path: '/admin',
@@ -90323,7 +90326,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     title: 'home'
   },
   component: _views_admin_main_index__WEBPACK_IMPORTED_MODULE_0__["default"],
-  children: [].concat(_toConsumableArray(_views_admin_dashboard_routes__WEBPACK_IMPORTED_MODULE_6__["default"]), _toConsumableArray(_views_admin_user_routes__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_views_admin_role_routes__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_views_admin_permission_routes__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_views_admin_permission_group_routes__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_views_admin_menu_routes__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_views_admin_banner_routes__WEBPACK_IMPORTED_MODULE_8__["default"]), _toConsumableArray(_views_admin_senior_routes__WEBPACK_IMPORTED_MODULE_9__["default"]))
+  children: [].concat(_toConsumableArray(_views_admin_dashboard_routes__WEBPACK_IMPORTED_MODULE_6__["default"]), _toConsumableArray(_views_admin_user_routes__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_views_admin_role_routes__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_views_admin_permission_routes__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_views_admin_permission_group_routes__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_views_admin_menu_routes__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_views_admin_banner_routes__WEBPACK_IMPORTED_MODULE_8__["default"]), _toConsumableArray(_views_admin_senior_routes__WEBPACK_IMPORTED_MODULE_9__["default"]), _toConsumableArray(_views_admin_member_routes__WEBPACK_IMPORTED_MODULE_10__["default"]))
 }].concat(_toConsumableArray(_views_admin_login_routes__WEBPACK_IMPORTED_MODULE_7__["default"])));
 
 /***/ }),
@@ -90747,7 +90750,7 @@ __webpack_require__.r(__webpack_exports__);
     notClosable: true
   },
   component: function component(resolve) {
-    return void __webpack_require__.e(/*! AMD require */ 6).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/dashboard/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+    return void __webpack_require__.e(/*! AMD require */ 7).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/dashboard/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
   }
 }]);
 
@@ -90766,7 +90769,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'adminLogin',
   path: '/admin/login',
   component: function component(resolve) {
-    return void __webpack_require__.e(/*! AMD require */ 8).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/login/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+    return void __webpack_require__.e(/*! AMD require */ 9).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/login/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
   }
 }]);
 
@@ -90841,6 +90844,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/views/admin/member/routes.js":
+/*!***************************************************!*\
+  !*** ./resources/js/views/admin/member/routes.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  name: 'adminMember',
+  path: 'member',
+  meta: {
+    provider: 'admin',
+    title: 'member',
+    cache: true,
+    permission: 'member.index'
+  },
+  component: function component(resolve) {
+    return void __webpack_require__.e(/*! AMD require */ 10).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/member/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+  }
+}]);
+
+/***/ }),
+
 /***/ "./resources/js/views/admin/menu/routes.js":
 /*!*************************************************!*\
   !*** ./resources/js/views/admin/menu/routes.js ***!
@@ -90860,7 +90888,7 @@ __webpack_require__.r(__webpack_exports__);
     permission: 'menu.index'
   },
   component: function component(resolve) {
-    return void __webpack_require__.e(/*! AMD require */ 3).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/menu/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+    return void __webpack_require__.e(/*! AMD require */ 4).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/menu/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
   }
 }]);
 
@@ -90885,7 +90913,7 @@ __webpack_require__.r(__webpack_exports__);
     permission: 'permission-group.index'
   },
   component: function component(resolve) {
-    return void __webpack_require__.e(/*! AMD require */ 7).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/permission-group/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+    return void __webpack_require__.e(/*! AMD require */ 8).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/permission-group/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
   }
 }]);
 
@@ -90944,7 +90972,7 @@ __webpack_require__.r(__webpack_exports__);
       permission: 'role.assign-permissions'
     },
     component: function component(resolve) {
-      return void __webpack_require__.e(/*! AMD require */ 5).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./permission.vue */ "./resources/js/views/admin/role/permission.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+      return void __webpack_require__.e(/*! AMD require */ 6).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./permission.vue */ "./resources/js/views/admin/role/permission.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
     }
   }, {
     name: 'roleIndex',
@@ -90956,7 +90984,7 @@ __webpack_require__.r(__webpack_exports__);
       permission: 'role.index'
     },
     component: function component(resolve) {
-      return void __webpack_require__.e(/*! AMD require */ 4).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/role/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+      return void __webpack_require__.e(/*! AMD require */ 5).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/role/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
     }
   }]
 }]);
@@ -90982,7 +91010,7 @@ __webpack_require__.r(__webpack_exports__);
     permission: 'senior.index'
   },
   component: function component(resolve) {
-    return void __webpack_require__.e(/*! AMD require */ 9).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/senior/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+    return void __webpack_require__.e(/*! AMD require */ 2).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/senior/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
   }
 }]);
 
@@ -91007,7 +91035,7 @@ __webpack_require__.r(__webpack_exports__);
     permission: 'admin-user.index'
   },
   component: function component(resolve) {
-    return void __webpack_require__.e(/*! AMD require */ 2).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/user/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
+    return void __webpack_require__.e(/*! AMD require */ 3).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./index.vue */ "./resources/js/views/admin/user/index.vue")]; (resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}.bind(this)).catch(__webpack_require__.oe);
   }
 }]);
 

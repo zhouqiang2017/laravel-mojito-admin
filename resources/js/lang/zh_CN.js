@@ -10,7 +10,8 @@ export default {
             menu: '菜单',
             roleAssignPermission: '角色分配权限',
             banner: '横幅',
-            senior: '中考体育'
+            senior: '中考体育',
+            member: '用户管理'
 
         }
     },

@@ -78,6 +78,13 @@
                 </template>
             </el-table-column>
         </el-table>
+        <el-pagination class="mo-page"
+                       @current-change="requestData"
+                       :current-page.sync="pagination.currentPage"
+                       :page-size="pagination.pageSize"
+                       layout="total, prev, pager, next, jumper"
+                       :total="pagination.total">
+        </el-pagination>
         <!-- 弹窗, 新增 / 修改 -->
         <add-or-update v-if="addOrUpdateVisible" ref="addOrUpdate" @refreshDataList="requestData"></add-or-update>
     </div>

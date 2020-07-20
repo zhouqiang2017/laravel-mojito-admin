@@ -25,6 +25,7 @@ class SeniorController extends Controller{
             $q->whereStatus($status);
         });
         $seniors = $query->where('status', '>', '-1')
+            ->whereType(1)
             ->orderByDesc('sequence')
             ->orderByDesc('status')
             ->latest()
