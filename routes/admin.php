@@ -10,3 +10,6 @@ Route::resource('senior', 'SeniorController')->middleware(['auth:sanctum', 'moji
 Route::middleware(['auth:sanctum', 'mojito.permission'])->prefix('member')->group(function () {
     Route::get('', 'MemberController@index')->name('member.index');
 });
+// 教练管理
+Route::resource('coach', 'CoachController')->middleware(['auth:sanctum', 'mojito.permission']);
+

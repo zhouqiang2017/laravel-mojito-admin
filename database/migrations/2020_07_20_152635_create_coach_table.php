@@ -20,7 +20,7 @@ class CreateCoachTable extends Migration
             $table->tinyInteger('gender')->default(1)->comment('1: 男；2：女');
             $table->tinyInteger('age')->comment('年龄');
             $table->string('phone')->comment('联系电话');
-            $table->tinyInteger('address')->comment('地址');
+            $table->string('address')->comment('地址');
             $table->string('location')->comment('经纬度，用“,”隔开');
             $table->string('avatar')->comment('头像');
             $table->string('front')->comment('身份证正面');
